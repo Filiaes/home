@@ -27,7 +27,7 @@ body {
 		
 main {
 	position: fixed;
-	bottom: 0px; /* Set this to the height of the header */
+	bottom: 0px;
 	top: 0px;
 	left: 0; 
 	right: 0;
@@ -41,7 +41,7 @@ main {
 .intro-message {
 	position: relative;
 	padding-top: 15%;
-	padding-bottom: 20%;
+	padding-bottom: 60px;
 	}
 		
 .intro-message > h1 {
@@ -71,7 +71,6 @@ main {
 		
 ul.intro-social-buttons > li {
 	display: block;
-	margin-bottom: 20px;
 	padding: 0;
 	display: inline-block;
 	}
@@ -142,14 +141,8 @@ a:focus,a:hover,a:active {
 	width: 100%; 
 	}
 		
-@media (max-device-width: 500px) {
-	ul.intro-social-buttons > li {
-	display: block;
-	margin-bottom: 20px;
-	padding: 0;
-	}
-	
-	#footer {
+@media (max-device-width: 500px) {	
+#footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -164,5 +157,39 @@ a:focus,a:hover,a:active {
 	margin-left: 5%;
 	border-radius: 13px 13px 0px 0px;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+	}
+	
+.intro-divider {
+	width: 60%;
+	max-width: 400px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+ul.intro-social-buttons > li {
+	display: block;
+	margin-bottom: 12px;
+	padding: 0;
+	}
+}
+
+@media (max-device-height: 400px) {
+main {
+	position: fixed;
+	bottom: 0px;
+	top: 0px;
+	left: 0; 
+	right: 0;
+	text-align: center;
+	color: #fff;
+	overflow: auto;
+	background: #212121 url(./img/bg.jpg);
+	background-repeat: repeat;	
+	}
+	
+.intro-message {
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 60px;
 	}
 }
