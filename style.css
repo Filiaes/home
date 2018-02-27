@@ -173,7 +173,7 @@ ul.intro-social-buttons > li {
 	}
 }
 
-@media (max-device-height: 400px) {
+@media (max-device-height: 520px) {
 main {
 	position: fixed;
 	bottom: 0px;
